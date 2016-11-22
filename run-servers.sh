@@ -7,7 +7,7 @@ export ROCE=0			# Don't use RoCE on Apt
 export APT=1
 
 NUM_SERVERS=7			# Number of server processes on the server machine	
-NUM_CLIENT_MACHINES=12	# Number of client machines
+NUM_CLIENT_MACHINES=1	# Number of client machines
 
 rm -rf client-tput		# Re-create a folder for clients to write their stuff into
 mkdir client-tput
