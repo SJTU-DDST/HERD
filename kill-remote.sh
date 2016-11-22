@@ -6,7 +6,7 @@ export APT=1
 if [ $APT -eq 1 ]
 then
 	for i in `seq 2 110`; do
-		sshpass -p "123456" ssh -oStrictHostKeyChecking=no node-$i.RDMA.fawn.apt.emulab.net "cd HERD; ./local-kill.sh" &
+		sshpass -p "123456" ssh -oStrictHostKeyChecking=no 192.168.99.12 "cd HERD; ./local-kill.sh" &
 	done
 else 
 	for i in `seq 2 20`; do
