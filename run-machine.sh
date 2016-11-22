@@ -7,7 +7,8 @@ export APT=1
 
 hi=`expr $num_processes - 1`
 for i in `seq 0 $hi`; do
-	id=`expr $@ \* $num_processes + $i`
+	#id=`expr $num_processes + $i`
+	id=$i
 	echo "Running client id $id"
 	touch client-$id
 
