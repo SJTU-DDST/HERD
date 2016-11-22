@@ -31,4 +31,4 @@ done
 
 # When we run this script remotely, the client processes die when this script dies
 # So, sleep.
-sleep 10000
+#sleep 10000
