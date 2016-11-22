@@ -270,6 +270,7 @@ void print_ud_kv_array(struct UD_KV *ud_kv, int size)
 	}
 }
 
+/*
 inline long long get_cycles()
 {
 	unsigned low, high;
@@ -279,6 +280,7 @@ inline long long get_cycles()
 	val = (val << 32) | low;
 	return val;
 }
+*/
 
 void nano_sleep(int ns)
 {
@@ -444,8 +446,10 @@ int is_roce(void)
 	return atoi(env);
 }
 
+/*
 inline uint32_t fastrand(uint64_t* seed)
 {
     *seed = *seed * 1103515245 + 12345;
     return (uint32_t)(*seed >> 32);
 }
+*/
