@@ -431,7 +431,7 @@ void init_ht(struct ctrl_blk *cb)
 		fprintf(stderr, "shmget Error! Failed to create circular log\n");
 		system("cat /sys/devices/system/node/*/meminfo | grep Huge");
 		exit(0);
-	}	
+	}
 	ht_log = shmat(ht_log_sid, 0, 0);
 	memset(ht_log, 0, LOG_SIZE);
 }
